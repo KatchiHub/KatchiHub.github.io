@@ -1,10 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katchi Hub - Guts & BlackPowder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Welcome to My Site</h1>
-    <p>This is my first GitHub Pages website!</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-skull-crossbones"></i>
+                <span>Katchi Hub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#install">Install</a></li>
+                <li><a href="#preview">Preview</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="gradient-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Katchi Hub</span>
+                    <span class="version-badge">v2.2</span>
+                </h1>
+                <p class="hero-subtitle">Professional Guts & BlackPowder Script Hub</p>
+                <p class="hero-desc">
+                    Dominate the battlefield with advanced ESP, Aimbot, Kill Aura, and class-specific automation. 
+                    Built by Yuki with WindUI for the ultimate gaming experience.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary download-btn">
+                        <i class="fas fa-download"></i>
+                        <span>Get Script</span>
+                    </button>
+                    <button class="btn btn-secondary discord-btn">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-preview">
+                    <div class="code-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span>KatchiHub.lua</span>
+                    </div>
+                    <pre class="code-body">--[[
+    Katchi Hub - Guts & BlackPowder
+    Made by Yuki
+    Professional WindUI Version
+]]--
+
+-- // Advanced ESP System
+-- // Auto-Aim & Kill Aura
+-- // Class Automation
+-- // Profile Management</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Powerful Features</span>
+            </h2>
+            
+            <div class="features-grid">
+                <!-- ESP Features -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Advanced ESP</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Zombie Type Detection (Bomber, Runner, Zapper, etc.)</li>
+                        <li><i class="fas fa-check"></i> Player ESP with Health & Infection Tracking</li>
+                        <li><i class="fas fa-check"></i> Dracula & Silver Trinket ESP</li>
+                        <li><i class="fas fa-check"></i> Headless Horseman Highlighting</li>
+                        <li><i class="fas fa-check"></i> Distance Scaling & Performance Mode</li>
+                    </ul>
+                </div>
+
+                <!-- Combat Features -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3>Combat Automation</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Auto Shoot Bomber (Instant & Timed Modes)</li>
+                        <li><i class="fas fa-check"></i> Auto Save Players from Zombies</li>
+                        <li><i class="fas fa-check"></i> Kill Aura with Multi-Target</li>
+                        <li><i class="fas fa-check"></i> Head Hit Redirection</li>
+                        <li><i class="fas fa-check"></i> Hitbox Expander (30+ Studs)</li>
+                    </ul>
+                </div>
+
+                <!-- Class Features -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3>Class-Specific Tools</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Medic: Auto Request Heal</li>
+                        <li><i class="fas fa-check"></i> Sapper: Anti-Grab & Shove Aura</li>
+                        <li><i class="fas fa-check"></i> Sapper: Auto Repair Buildings</li>
+                        <li><i class="fas fa-check"></i> Chaplain: Auto Bless Infected</li>
+                    </ul>
+                </div>
+
+                <!-- Misc Features -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Quality of Life</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Profile System (Save/Load Configs)</li>
+                        <li><i class="fas fa-check"></i> Customizable Themes</li>
+                        <li><i class="fas fa-check"></i> WalkSpeed Modifier (Loop-Forced)</li>
+                        <li><i class="fas fa-check"></i> Auto Remove Horses (Performance)</li>
+                        <li><i class="fas fa-check"></i> Fullbright & No Fog</li>
+                    </ul>
+                </div>
+
+                <!-- UI Features -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>WindUI Integration</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Modern, Customizable Interface</li>
+                        <li><i class="fas fa-check"></i> Draggable Open Button</li>
+                        <li><i class="fas fa-check"></i> Theme Support (Red Default)</li>
+                        <li><i class="fas fa-check"></i> Notification System</li>
+                        <li><i class="fas fa-check"></i> Search & Scrollbar Support</li>
+                    </ul>
+                </div>
+
+                <!-- Security -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Robust & Safe</h3>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Non-Blocking Module Loading</li>
+                        <li><i class="fas fa-check"></i> Error Handling & UI Locks</li>
+                        <li><i class="fas fa-check"></i> Profile-Load Safe Flags</li>
+                        <li><i class="fas fa-check"></i> Master Key Bypass System</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="install" class="install">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Installation</span>
+            </h2>
+            <div class="install-grid">
+                <div class="install-step">
+                    <div class="step-number">1</div>
+                    <h3>Get Executor</h3>
+                    <p>Download a Roblox exploit like Synapse X, Script-Ware, or Krnl.</p>
+                </div>
+                <div class="install-step">
+                    <div class="step-number">2</div>
+                    <h3>Copy Script</h3>
+                    <p>Click the download button below to copy the entire script to clipboard.</p>
+                </div>
+                <div class="install-step">
+                    <div class="step-number">3</div>
+                    <h3>Inject & Execute</h3>
+                    <p>Open Guts & BlackPowder, inject your executor, then paste and execute the script.</p>
+                </div>
+                <div class="install-step">
+                    <div class="step-number">4</div>
+                    <h3>Get Key</h3>
+                    <p>Follow the Platoboost link that appears, complete the key process, then paste your key.</p>
+                </div>
+            </div>
+            
+            <div class="download-area">
+                <button class="btn btn-primary download-btn">
+                    <i class="fas fa-download"></i>
+                    Copy Script to Clipboard
+                </button>
+                <p class="download-note">Script is automatically copied when clicked</p>
+            </div>
+
+            <!-- Warning Box -->
+            <div class="warning-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p><strong>Warning:</strong> Using this script may violate Roblox's Terms of Service. Use at your own risk. The developer is not responsible for any bans or account actions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Section -->
+    <section id="preview" class="preview">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">Preview</span>
+            </h2>
+            <p class="section-subtitle">See Katchi Hub in action</p>
+            
+            <div class="preview-grid">
+                <div class="preview-card">
+                    <i class="fas fa-window-maximize"></i>
+                    <h3>Sleek Dashboard</h3>
+                    <p>Modern WindUI interface with customizable themes and intuitive navigation</p>
+                </div>
+                <div class="preview-card">
+                    <i class="fas fa-crosshairs"></i>
+                    <h3>Precise Aimlock</h3>
+                    <p>Draggable aimlock button with ping prediction and smooth camera movement</p>
+                </div>
+                <div class="preview-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>ESP Overlay</h3>
+                    <p>Color-coded zombie and player ESP with distance labels and chams</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="gradient-text">FAQ</span>
+            </h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        How do I get a key?
+                    </h3>
+                    <p class="faq-answer">After executing the script, click the Platoboost button to copy a link. Complete the process on that site to receive your key.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        What executors are supported?
+                    </h3>
+                    <p class="faq-answer">Any modern Roblox executor that supports HTTP requests and LoadString. Synapse X, Script-Ware, and Krnl are recommended.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        Can I get banned?
+                    </h3>
+                    <p class="faq-answer">Yes. Any script can result in a ban. Use alt accounts and don't abuse features excessively. The script has safety features but no guarantees.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        How do I save settings?
+                    </h3>
+                    <p class="faq-answer">Use the Profiles tab in the Misc section. Create a profile name and click Save. Load it anytime with the Load button.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-question-circle"></i>
+                        Is this script free?
+                    </h3>
+                    <p class="faq-answer">Yes, the script is free but requires a key from Platoboost. There is an optional MasterKey feature for supporters.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <h3>Katchi Hub</h3>
+                    <p>Professional Guts & BlackPowder Script</p>
+                    <p>Made by Yuki</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#" class="discord-btn">
+                        <i class="fab fa-discord"></i>
+                        Discord
+                    </a>
+                    <a href="#" class="github-btn">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Katchi Hub. Not affiliated with Roblox or the game developer.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hidden Script Content -->
+    <textarea id="script-content" style="display:none;">--[[
+    Katchi Hub - Guts & BlackPowder
+    Made by Yuki
+    Professional WindUI Version
+]]--
+-- // [FULL SCRIPT CONTENT WOULD GO HERE - TRUNCATED FOR DISPLAY]
+-- // Paste your entire script in this textarea</textarea>
+
+    <script src="script.js"></script>
 </body>
 </html>
